@@ -11,9 +11,13 @@ namespace Employee
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Wages");
-            int EmpRate = 20;
-            EmployeeCheck.attendence(EmpRate);
-            
+
+            EmployeeCheck.attendence();
+            EmployeeCheck emp = new EmployeeCheck();
+            emp.wagesformonth();
+            //EmployeeCheck.attendence(EmpRate);
+            //EmployeeCheck.wagesformonth(int);
+
         }
     }
 }

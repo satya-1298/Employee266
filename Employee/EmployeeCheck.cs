@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Employee
 {
+    
     public class EmployeeCheck
     {
-        public static void attendence(int EmpRate)
+        const int FullTime = 1, EmpRate = 20;
+        const  int PartTime= 2;
+        public static void attendence()
         {
-            int FullTime = 1;
-            int PartTime = 2;
+
             int EHours = 0;
             int EWage = 0;
             //int EmpRate = 20;
@@ -38,6 +40,31 @@ namespace Employee
            
          
         }
+        public void wagesformonth()
+        {
+            int totalsalary = 0;
+            int DailyHours = 100;
+            int PartTime = 2;
+           // for (int i = 0; i <= 20 && (DailyHours >=100); i++) 
+           for(int i = 0; i < 20; i++) 
+            {
+                Random random = new Random();
+                int Varible=random.Next(0,3);
+                switch (Varible) 
+                {
+                    case 1:
+                        totalsalary += EmpRate* DailyHours;
+                        break;
+                    case 2:
+                        totalsalary += (EmpRate/2)* DailyHours;
+                        break;
+
+                        
+                }
+            }
+            Console.WriteLine( "Wages for month:" + totalsalary);
+        }
+
     }
         
     
