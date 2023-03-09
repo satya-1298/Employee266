@@ -13,6 +13,7 @@ namespace Employee
             Console.WriteLine("Welcome to Employee Wages");
             int EmpRate = 20;
             EmployeeCheck.attendence(EmpRate);
+            
         }
     }
 }

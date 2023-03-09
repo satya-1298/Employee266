@@ -16,12 +16,17 @@ namespace Employee
             int EWage = 0;
             //int EmpRate = 20;
             Random random = new Random();
-            int Empcheck = random.Next(2);
+            int Empcheck = random.Next(0,3);
             if (Empcheck == FullTime)
             {
                 Console.WriteLine("the Employee is present");
                 EHours = 8;
 
+            }
+            else if (Empcheck==PartTime)
+            {
+                Console.WriteLine("Emp is part time present ");
+                EHours = 4;
             }
             else
             {
@@ -30,6 +35,8 @@ namespace Employee
             }
             EWage = EHours * EmpRate;
             Console.WriteLine("Emp Wages is " + EWage);
+           
+         
         }
     }
         
