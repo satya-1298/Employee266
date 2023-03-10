@@ -15,6 +15,7 @@ namespace Employee
             EmployeeCheck.attendence();
             EmployeeCheck emp = new EmployeeCheck();
             emp.wagesformonth();
+            emp.calculateWage();
             //EmployeeCheck.attendence(EmpRate);
             //EmployeeCheck.wagesformonth(int);
 
