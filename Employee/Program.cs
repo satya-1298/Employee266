@@ -12,12 +12,23 @@ namespace Employee
         {
             Console.WriteLine("Welcome to Employee Wages");
 
-            EmployeeCheck.attendence();
-            EmployeeCheck emp = new EmployeeCheck();
-            emp.wagesformonth();
-            emp.calculateWage();
-            //EmployeeCheck.attendence(EmpRate);
-            //EmployeeCheck.wagesformonth(int);
+            //EmployeeCheck emp = new EmployeeCheck();
+            //emp.attendence();
+            //emp.wagesformonth();
+            //emp.calculateWage();
+            //Empwage.wages();
+            //VariousCompanies TATA = new VariousCompanies("TATA", 20, 2, 10);
+            //VariousCompanies Reliance = new VariousCompanies("Reliance", 10, 4, 10);
+            //TATA.wage();
+            //Console.WriteLine(TATA.Company());
+            //Reliance.wage();
+            //Console.WriteLine(Reliance.Company());
+            Interface emp = new Interface();
+            emp.toCompanywage("TATA", 20, 2, 10);
+            emp.toCompanywage("Reliance", 10, 4, 10);
+            emp.computeWages();
+
+
 
         }
     }

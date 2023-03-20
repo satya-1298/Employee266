@@ -13,7 +13,7 @@ namespace Employee
     {
         const int FullTime = 1, EmpRate = 20;
         const int PartTime = 2;
-        public static void attendence()
+        public  void attendence()
         {
 
             int EHours = 0;
